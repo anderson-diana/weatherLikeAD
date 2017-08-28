@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54874351F5495950015F1BE /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54874341F5495950015F1BE /* WeatherTableViewController.swift */; };
+		F548743C1F5496E50015F1BE /* WeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F548743A1F5496E50015F1BE /* WeatherTableViewCell.m */; };
+		F548743D1F5496E50015F1BE /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F548743B1F5496E50015F1BE /* WeatherTableViewCell.xib */; };
 		F575465C1F50472C00C4EEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F575465B1F50472C00C4EEF4 /* AppDelegate.swift */; };
 		F575465E1F50472C00C4EEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F575465D1F50472C00C4EEF4 /* ViewController.swift */; };
 		F57546611F50472C00C4EEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575465F1F50472C00C4EEF4 /* Main.storyboard */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F54874341F5495950015F1BE /* WeatherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
+		F54874381F5496E40015F1BE /* WeatherLikeAD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherLikeAD-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F54874391F5496E50015F1BE /* WeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherTableViewCell.h; path = ../WeatherTableViewCell.h; sourceTree = "<group>"; };
+		F548743A1F5496E50015F1BE /* WeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherTableViewCell.m; path = ../WeatherTableViewCell.m; sourceTree = "<group>"; };
+		F548743B1F5496E50015F1BE /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherTableViewCell.xib; path = ../WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		F57546581F50472C00C4EEF4 /* WeatherLikeAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherLikeAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575465B1F50472C00C4EEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F575465D1F50472C00C4EEF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 		F575465A1F50472C00C4EEF4 /* WeatherLikeAD */ = {
 			isa = PBXGroup;
 			children = (
+				F54874381F5496E40015F1BE /* WeatherLikeAD-Bridging-Header.h */,
+				F54874391F5496E50015F1BE /* WeatherTableViewCell.h */,
+				F548743A1F5496E50015F1BE /* WeatherTableViewCell.m */,
+				F548743B1F5496E50015F1BE /* WeatherTableViewCell.xib */,
 				F575465B1F50472C00C4EEF4 /* AppDelegate.swift */,
 				F575465D1F50472C00C4EEF4 /* ViewController.swift */,
 				F575465F1F50472C00C4EEF4 /* Main.storyboard */,
@@ -106,6 +118,7 @@
 				F57546671F50472C00C4EEF4 /* LaunchScreen.storyboard */,
 				F575466A1F50472C00C4EEF4 /* Info.plist */,
 				F57546621F50472C00C4EEF4 /* WeatherLikeAD.xcdatamodeld */,
+				F54874341F5495950015F1BE /* WeatherTableViewController.swift */,
 			);
 			path = WeatherLikeAD;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 					F57546571F50472C00C4EEF4 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BK92UARXU7;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F575466E1F50472C00C4EEF4 = {
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F548743D1F5496E50015F1BE /* WeatherTableViewCell.xib in Resources */,
 				F57546691F50472C00C4EEF4 /* LaunchScreen.storyboard in Resources */,
 				F57546661F50472C00C4EEF4 /* Assets.xcassets in Resources */,
 				F57546611F50472C00C4EEF4 /* Main.storyboard in Resources */,
@@ -265,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F548743C1F5496E50015F1BE /* WeatherTableViewCell.m in Sources */,
+				F54874351F5495950015F1BE /* WeatherTableViewController.swift in Sources */,
 				F575465E1F50472C00C4EEF4 /* ViewController.swift in Sources */,
 				F575465C1F50472C00C4EEF4 /* AppDelegate.swift in Sources */,
 				F57546641F50472C00C4EEF4 /* WeatherLikeAD.xcdatamodeld in Sources */,
@@ -419,11 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BK92UARXU7;
 				INFOPLIST_FILE = WeatherLikeAD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aqdiana.WeatherLikeAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeatherLikeAD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -432,11 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BK92UARXU7;
 				INFOPLIST_FILE = WeatherLikeAD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aqdiana.WeatherLikeAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeatherLikeAD-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -518,6 +540,7 @@
 				F57546851F50472C00C4EEF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F57546861F50472C00C4EEF4 /* Build configuration list for PBXNativeTarget "WeatherLikeADTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +549,7 @@
 				F57546881F50472C00C4EEF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F57546891F50472C00C4EEF4 /* Build configuration list for PBXNativeTarget "WeatherLikeADUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +558,7 @@
 				F575468B1F50472C00C4EEF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
